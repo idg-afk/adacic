@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Protected Page</title>
+  <script>
+    var password = prompt("password:");
+    if (password !== "letmein") {
+      document.write("Access denied.");
+      throw new Error("Unauthorized access");
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome to the Secret Page!</h1>
+  <p>This content is only for people who know the password.</p>
+</body>
+</html>
